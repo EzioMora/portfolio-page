@@ -197,18 +197,27 @@ body {
     color: rgb(255,255,255,0.8);
 }
 
+@keyframes opacity {
+    from {opacity: 1;}
+    to {opacity: 0;}
+}
+
 .profile__speciality {
     font-size: 24px;
     color: rgb(255,255,255,0.5);
+    opacity: 1;
+    animation: opacity 1.5s ease-in-out infinite alternate;
 }
 
 @keyframes upAndDown {
     fromt {
         bottom: 105px;
+        opacity: 1;
     }
 
     to {
         bottom: 90px;
+        opacity: 0.2;
     }
 }
 
@@ -220,7 +229,8 @@ body {
     right: 0;
     bottom: 105px;
     text-align: center;
-    animation: upAndDown 0.9s ease-in infinite alternate;
+    opacity: 1;
+    animation: upAndDown 1.5s ease-in infinite alternate;
 }
 
 .profile__arrow-down {
