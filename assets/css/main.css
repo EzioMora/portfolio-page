@@ -87,6 +87,10 @@ body {
 
 /* header */
 
+.header {
+    background: rgb(0,0,0,0.4);
+}
+
 .header__logo {
     color: rgb(255,255,255, 0.8);
     font-size: 24px;
